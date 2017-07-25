@@ -1,0 +1,59 @@
+{
+  "name": "react-typescript-babel-webpack",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Boilerplate with React, TypeScript, Babel and Webpack",
+  "main": "./src/index.tsx",
+  "author": "Ross Weir",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --content-base public",
+    "lint": "tslint --format stylish src/**/*.ts{,x}",
+    "test": "jest --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@types/react": "^15.0.38",
+    "@types/react-dom": "^15.5.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^20.0.4",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^20.0.4",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^2.3.1",
+    "tslint": "^5.5.0",
+    "tslint-react": "^3.0.0",
+    "typescript": "^2.4.1",
+    "typescript-babel-jest": "^1.0.5",
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "typescript-babel-jest"
+    },
+    "moduleNameMapper": {
+      "^.+\\.css$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js|jsx)$"
+  }
+}
